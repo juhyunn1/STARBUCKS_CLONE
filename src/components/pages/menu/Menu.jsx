@@ -1,16 +1,21 @@
 import React from 'react';
-import menus from "../../../data/menus.json"
+import { Link } from 'react-router-dom';
+import products from "../../../data/products.json"
+import Title from '../../ui/Title';
 import style from "./Menu.module.css"
 
 function Menu() {
   return (
     <div className='container'>
-      <h1>메뉴 페이지</h1>
-      <ul className={style.menu}>
+      <Title title="메뉴 페이지" isView={true}/>
+      <ul className={style.productList}>
         {
-          menus.menu.map( menu => (
-            <li key={menu.id}>
-              zzzz
+          products.product.map( product => (
+            <li key={product.id}>
+              <Link to={`./${product.id}`}>
+                <img src={product.image} alt={product.title}/>
+                <div>{product.title}</div>
+              </Link>
             </li>
           ))
         }

@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  margin : 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin-top: 70px;
+  padding: 1%;
+  box-sizing: border-box; /* width를 100% 유지, 패딩 포함 X */
+  overflow: hidden; /* 마진 겹침 현상 때문에 설정 */
+}
+
+header {
+  height: 70px;
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--header-border);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

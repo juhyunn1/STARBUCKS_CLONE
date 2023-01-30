@@ -1,9 +1,10 @@
 import React from 'react';
+import Title from '../../ui/Title';
 
 function Cart() {
   return (
     <div className='container'>
-      카트 페이지
+      <Title title="카트 페이지" isView={true}/>
     </div>
   );
 }
