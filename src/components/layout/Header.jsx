@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <Link to="/">
-        <img src="../../images/logo/logo.png" alt="스타벅스 코리아" height={40}/>
+        <img src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="스타벅스 코리아"/>
       </Link>
       <nav>
         <ul>
@@ -19,4 +19,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header;  

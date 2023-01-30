@@ -8,11 +8,14 @@ header {
   z-index: 999;
 }
 header img {
-  width: 50px;
-  height: 50px;
+  /* background: url(../../images/logo/logo.png); */
+  /* background-color: #2d2926; */
+  width: 45px;
+  height: 45px;
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 12.5px;
+  left: 12.5px;
+  margin: 0;
 }
 
 nav {

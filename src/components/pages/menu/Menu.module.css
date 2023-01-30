@@ -1,0 +1,12 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.menu li {
+  list-style: none;
+  padding-left: 0px;
+}
