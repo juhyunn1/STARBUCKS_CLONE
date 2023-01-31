@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Title from '../../ui/Title';
 import { useParams } from 'react-router-dom';
+import ProductMain from './ProductMain';
 
 function Product() {
   const { productId } = useParams(); // 주소의 파라미터 사용
@@ -9,7 +10,7 @@ function Product() {
   const [product, setProduct] = useState(); // 상품 데이터
 
   useEffect(() => {
-    fetch(`http://localhost:3001/product/${productId}`) // 현재 페이지 상품 데이터 가져와서
+    fetch(`http://localhost:3001/product/${productId}`) // 현재 페이지 상품 데이터 가져와서, json-server --port 3001 --watch ./src/data/products.json
     .then(res => res.json())
     .then(data => {
       console.log(data);
@@ -34,15 +35,15 @@ function Product() {
     <div className='container'>
       <Title title="{category.title}" isView={true}/>
       {
-        product && 
-        <div>
-          <img src={product.image} alt={product.title} width="100%"/>
-          <div>{product.title}</div>
-          <div>{product.engTitle}</div>
-          <div>{product.price}</div>
-          <div>{product.detail}</div>
-          <button>ADD CART</button>
-        </div>
+        product && <ProductMain product={product}/>
+        // <div>
+        //   <img src={product.image} alt={product.title} width="100%"/>
+        //   <div>{product.title}</div>
+        //   <div>{product.engTitle}</div>
+        //   <div>{product.price}</div>
+        //   <div>{product.detail}</div>
+        //   <button>ADD CART</button>
+        // </div>
       }
     </div>
   );

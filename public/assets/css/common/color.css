@@ -1,6 +1,15 @@
 :root {
+  /* header */
   --header-bg: #f6f5ef;
   --header-font: #333;
   --header-border: #e5e5e5;
   --header-badge: red;
+
+  /* ProductMain */
+  --product-korTitle: #222;
+  --product-engTitle: #666;
+  --product-description: #444;
+
+  /* button */
+  --btn-addCart: #006633;
 }
