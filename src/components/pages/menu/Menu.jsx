@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import products from "../../../data/products.json"
+import products from "../../../data/data.json";
 import Title from '../../ui/Title';
 import style from "./Menu.module.css"
 
